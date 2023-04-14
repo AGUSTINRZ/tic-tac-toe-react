@@ -1,0 +1,18 @@
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 75px;
+  aspect-ratio: 1/1;
+  max-width: 75px;
+  background-color: rgba(54, 54, 54, 0.5);
+  border-radius: 1rem;
+  border: .25rem solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  padding: .25rem;
+  transition: border-color .5s ease;
+}
+
+.square:hover {
+  border-color: #646cff;
+}
