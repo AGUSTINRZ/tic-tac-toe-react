@@ -31,13 +31,25 @@ body {
 
 .board {
   width: fit-content;
-  margin: 40px auto;
-  text-align: center;
 }
 
-.board h1 {
+h1 {
   color: #eee;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
+
+button {
+  margin-bottom: 1rem;
+  padding: .5rem .75rem;
+  border: 1px solid #000;
+  border-radius: .25rem;
+  background: #000;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid #646cff;
 }
 
 .board button {
@@ -71,6 +83,7 @@ body {
   width: fit-content;
   position: relative;
   border-radius: 10px;
+  text-align: center;
 }
 
 .turn .square,
