@@ -74,8 +74,9 @@ function App() {
 		if (newWinner) {
 			setWinner(newWinner);
 			verifyWinner(turn);
-		} else if (!board.includes(null)) {
+		} else if (!newBoard.includes(null)) {
 			setWinner(false);
+			restartGame();
 		}
 	};
 
