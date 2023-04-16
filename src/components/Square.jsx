@@ -3,24 +3,17 @@ import "../styles/square.css";
 import Cross from "./Cross";
 import Circle from "./Circle";
 
-function Square() {
-	
+function Square({children, updateBoard, index, isSelected}) {
 
-	function obtainValue(value) {
-		switch (value) {
-			case true:
-				return <Circle />;
-			case false:
-				return <Cross />;
-			case undefined:
-				return null; // Añadido retorno de valor en caso de undefined
-			default:
-				return null; // Añadido retorno de valor por defecto
-		}
+	const className = `square ${isSelected ? "is-selected" : ""}`;
+
+	const handleClick = () => {
+		updateBoard(index);
 	}
 
 	return (
-		<div className="square">
+		<div className={className} onClick={handleClick}>
+			{children}
 		</div>
 	);
 }

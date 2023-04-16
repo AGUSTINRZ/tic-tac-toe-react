@@ -3,3 +3,10 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
+
+.turn {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  gap: 1rem;
+}
