@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import Square from "./components/Square";
-import Cross from "./components/Cross";
-import Circle from "./components/Circle";
 import "./App.css";
 import "./styles/board.css";
 
 const TURNS = {
-	X: <Cross />,
-	O: <Circle />,
+	X: 'X',
+	O: 'O',
 };
 
 const WINNER_COMBOS = [
